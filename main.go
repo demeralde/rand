@@ -12,14 +12,14 @@ func main() {
 	args := os.Args
 	argsLen := len(args)
 
-	min, minErr := strconv.Atoi(os.Args[1])
-	max, maxErr := strconv.Atoi(os.Args[2])
-
 	if argsLen < 3 {
 		log.Fatal("You must provide a `min` and `max` number, e.g `rand 1 3`")
 	} else if argsLen > 3 {
 		log.Fatal("You must only provide 2 arguments (the min and max number)")
 	}
+
+	min, minErr := strconv.Atoi(os.Args[1])
+	max, maxErr := strconv.Atoi(os.Args[2])
 
 	if minErr != nil {
 		log.Fatal("The `min` arg must be an integer")

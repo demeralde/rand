@@ -9,7 +9,7 @@ A simple CLI script for generating a random number between a given range.
 2. Install the package:
 
 ```sh
-go install github.com/dspacejs/rand
+go install github.com/demeralde/rand
 ```
 
 1. Run the script with a `min` and `max` number:
